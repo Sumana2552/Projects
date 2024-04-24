@@ -5,8 +5,7 @@ import scipy.io.wavfile as wav
 from pydub import AudioSegment
 from noisereduce import reduce_noise
 from scipy.signal import butter, filtfilt
-import matplotlib.pyplot as plt
-from matplotlib.animation import FuncAnimation
+
 
 def butter_worth_bandpass(lowcutfreq, highcutfreq, sampling_freq, order=5):
     nyq = 0.5 * sampling_freq #nyquist frequency 
